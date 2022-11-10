@@ -1,0 +1,7 @@
+THIS IS OUR AVAILABLE PROGRAMS FOR TOURS:
+1. Single tour
+	This is for only one person
+2. Couple
+	This is for a couple group
+3. Family
+	This package is for a family. We provide 5 single tickets in a family tour

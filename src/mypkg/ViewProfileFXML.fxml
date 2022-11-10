@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="517.0" style="-fx-border-color: black;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="mypkg.ViewProfileFXMLController">
+   <children>
+      <Text layoutX="119.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" />
+      <Label fx:id="fNameLabel" layoutX="225.0" layoutY="96.0" />
+      <Text layoutX="119.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" />
+      <Label fx:id="lNameLabel" layoutX="225.0" layoutY="133.0" />
+      <Text layoutX="119.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email ID :" />
+      <Label fx:id="emailLabel" layoutX="225.0" layoutY="176.0" />
+      <Text layoutX="118.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No :" />
+      <Label fx:id="phoneLabel" layoutX="225.0" layoutY="215.0" />
+   </children>
+</AnchorPane>

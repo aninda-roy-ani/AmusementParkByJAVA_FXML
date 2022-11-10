@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.ViewOrderFXMLController">
+   <children>
+      <TableView fx:id="prodTable" layoutX="66.0" layoutY="139.0" prefHeight="234.0" prefWidth="347.0">
+        <columns>
+          <TableColumn fx:id="prodID" prefWidth="111.0" text="Product ID" />
+          <TableColumn fx:id="prodName" prefWidth="114.0" text="Product Name" />
+            <TableColumn fx:id="prodNum" prefWidth="120.0" text="Number of Products" />
+        </columns>
+      </TableView>
+      <Text layoutX="66.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here are the orders you have received so far :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orderer Site Manager :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Last Date :" />
+      <Label fx:id="ordererLabel" layoutX="206.0" layoutY="56.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderDateLabel" layoutX="206.0" layoutY="76.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="600.0" style="-fx-border-width: 5 5 5 5; -fx-border-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.BookTicketFXMLController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="108.0" prefWidth="600.0" spacing="28.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Ride">
+               <HBox.margin>
+                  <Insets top="52.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="rideCB" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets top="52.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="27.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Date">
+               <HBox.margin>
+                     <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="date" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="55.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nameId" onMouseClicked="#MouseEntered" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="37.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone no">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phoneNo" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="45.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Package">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="packageCB" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="600.0" spacing="6.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="No of Packages">
+               <HBox.margin>
+                     <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="noTickets" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="600.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#SubmitBtnAction" style="-fx-border-color: green;" text="Submit">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #e1f799;">
+         <children>
+            <Label fx:id="ticketLabel" alignment="CENTER" prefHeight="33.0" prefWidth="581.0" textFill="#057509">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

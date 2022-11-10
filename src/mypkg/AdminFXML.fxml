@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="adminBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mypkg.AdminFXMLController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-width: 0 0 5 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="486.0" prefWidth="198.0" style="-fx-border-width: 0 2 0 0; -fx-border-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#EditEntryRuleBtnAction" prefHeight="35.0" prefWidth="198.0" text="Update Entry Rules" />
+            <Button mnemonicParsing="false" onAction="#ViewRideBtnAction" prefHeight="34.0" prefWidth="198.0" text="Update Rides" />
+            <Button mnemonicParsing="false" onAction="#ViewTourBtnAction" prefHeight="33.0" prefWidth="198.0" text="Update Tour Programs" />
+            <Button mnemonicParsing="false" onAction="#LocContBtnAction" prefHeight="34.0" prefWidth="198.0" text="Update Location &amp; Contact" />
+            <Button fx:id="signOutButton" mnemonicParsing="false" onAction="#SignOutBtnAction" prefHeight="35.0" prefWidth="198.0" text="Sign Out">
+               <VBox.margin>
+                  <Insets top="279.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="37.0" prefWidth="755.0" style="-fx-border-width: 5 0 0 0; -fx-border-color: black;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
